@@ -1,0 +1,10 @@
+<div class="wrapper">
+    <div class="flex">
+        <date-picker-wheel *ngFor="let format of formats; let i = index" [format]="formats[i]" [data]="value">
+        </date-picker-wheel>
+    </div>
+    <div class="flex action-container">
+        <button class="action-btn">Cancel</button>
+        <button class="action-btn">Set</button>
+    </div>
+</div>

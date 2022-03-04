@@ -1,0 +1,8 @@
+<div class="datepicker-wheel">
+    <!-- <p>{{format}}</p> -->
+    <ul class="datepicker-scroll">
+        <li (click)="onDateClick(i)" class="{{i == middle ? 'date-item active' : 'date-item'}}"
+            *ngFor="let date of dates;let i = index;">{{date | date: format}}
+        </li>
+    </ul>
+</div>
